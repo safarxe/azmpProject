@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vacanciesqrupisiazmp202/assets/css/index.css">
+    <title>Register Company</title>
+</head>
+<body>
+    <!-- Register -->
+    <div class="form-container">
+        <h2>Register Company</h2>
+        <div class="trial-banner">
+            <h3>Start Your Free Trial</h3>
+            <p>Get 31 days of premium features</p>
+        </div>
+
+        <form onsubmit="return handleRegister(event)">
+            <div class="form-group">
+                <label for="registerName">Company Name</label>
+                <div class="input-group">
+                    <input type="text" id="registerName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="registerName">Contact Name</label>
+                <div class="input-group">
+                    <input type="text" id="registerName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <div class="input-group">
+                    <input type="email" id="registerEmail" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <div class="input-group">
+                    <input type="password" id="registerPassword" required>
+                    <button type="button" class="toggle-password"
+                        onclick="togglePassword('registerPassword')">👓</button>
+                </div>
+            </div>
+
+            <div class="features-list">
+                <h4>What you'll get:</h4>
+                <ul>
+                    <li>✔ Best job vacancies</li>
+                    <li>✔ High paying job vacancies</li>
+                    <li>✔ Fast feedback</li>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+        <p class="switch-text">
+            Already have an account?
+            <a href="./co-login.html" onclick="toggleForm()">Sign in</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
