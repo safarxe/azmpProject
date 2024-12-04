@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to your Dashboard</h1>
+    <p><b>Name:</b> <span id="user-name"></span></p>
+    <p><b>Bio:</b>  <span id="user-bio"></span></p>
+    <p><b>Skills:</b> <span id="user-skills"></span></p>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+const userId = urlParams.get("userId");
+
+// İstifadəçi məlumatlarını tap
+const loggedInUser = users.find((u) => u.id === userId);
+
+// Məlumatları göstər
+if (loggedInUser) {
+    document.querySelector("#user-name").textContent = loggedInUser.name;
+    document.querySelector("#user-bio").textContent = loggedInUser.bio;
+    document.querySelector("#user-skills").textContent = loggedInUser.skills.join(", ");
+} else {
+    alert("İstifadəçi tapılmadı!");
+}
+
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>

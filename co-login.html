@@ -14,7 +14,7 @@
             <h2>Login Company</h2>
             <form onsubmit="return handleLogin(event)">
                 <div class="form-group">
-                    <label for="loginEmail">Email</label>
+                    <label for="loginEmail">Email </label>
                     <div class="input-group">
                         <input type="email" required>
                     </div>
@@ -23,30 +23,26 @@
                 <div class="form-group">
                     <label for="loginPassword">Password</label>
                     <div class="input-group">
-                        <input type="password" required>
-                        <button type="button" class="toggle-password"
-                            onclick="togglePassword('loginPassword')">👁️</button>
+                        <input type="password" required minlength="8">
+                        <button type="button" class="see-password">👁️<button>
                     </div>
                 </div>
 
                 <div class="form-options">
                     <label class="checkbox">
-                        <input type="checkbox">
-                        Remember me
-                    </label>
-                    <a href="#" class="forgot-link">Forgot Password?</a>
+                        <input type="checkbox">Remember me</label>
+                    <a href="./co-register.html" class="forgot-link">Forgot Password?</a>
                 </div>
 
                 <button type="submit" class="submit-btn">Sign In</button>
             </form>
             <p class="switch-text">
-                Don't have an account?
-                <a href="./co-register.html" onclick="toggleForm()">Sign up</a>
+                Didn't you register at company?
+                <a href="./co-register.html" onclick="toggleForm()">Register Company</a>
             </p>
         </div>
-        
-    <!-- <script src="main.js"></script> -->
-    <script src="./auth.js"></script>
-</body>
+
+        <script src="./main.js"></script>
+        <script src="./auth.js"></script></body>
 
 </html>
